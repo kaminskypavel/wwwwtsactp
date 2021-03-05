@@ -26,6 +26,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - run: yarn install --frozen-lockfile && yarn build
+      - run: yarn install --frozen-lockfile
 
       - uses: crazy-max/ghaction-github-pages@v2.2.0
