@@ -1,10 +1,10 @@
+# https://github.com/crazy-max/ghaction-github-pages
 name: GitHub Pages
 'on':
   push:
     branches:
       - master
     paths-ignore:
-      - '.github/workflows/**/*'
       - 'README.md'
 
 jobs:
@@ -29,3 +29,7 @@ jobs:
       - run: yarn install --frozen-lockfile
 
       - uses: crazy-max/ghaction-github-pages@v2.2.0
+        with:
+          target_branch: gh-pages
+          build_dir: .
+
