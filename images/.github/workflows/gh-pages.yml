@@ -1,0 +1,2 @@
+- name: GitHub Pages
+  uses: crazy-max/ghaction-github-pages@v2.2.0
