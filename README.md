@@ -1,6 +1,8 @@
 # WWWWTSACTP
 **world wide web wide tech support association of certified technological professionals (WWWTSACTP)** website
 
+<img src="images/logo.png" alt="logo" style="width:300px"/>
+
 a scammy website to scambait scammers. in one word - a scam!
 
 this site should look and feel horrible, both on PC and mobile!
