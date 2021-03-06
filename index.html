@@ -10,33 +10,43 @@
             text-align: center;
         }
 
-        h1 {
+        h2 {
             color: blue;
         }
+
+        .blink {
+            animation: blinker 1s step-start infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
         body {
             background-image: url("images/bg.gif");
             background-color: #cccccc;
         }
-
     </style>
 </head>
 
 <body onload="init()">
     <h1>world wide web wide tech support association of certified technological professionals (WWWTSACTP)</h1>
-    <h2>Sir Ma'am, We are her to help!</h1>
+    <h2 class="blink">Sir Ma'am, We are her to help!</h2>
         <img src="images/logo.png" alt="logo" />
-        <br/>
+        <br />
         <img src="images/ie.gif" alt="ie" />
         <img src="images/clippy.gif" alt="clippy" />
 
         <h2>We are certified world known organisation business helping to provides
             small and insignificant cusotmers as you an average service they deserve
-            </h1>
+            </h2>
 
             <iframe id="#soundcloud-player" width="100%" height="200" scrolling="no" frameborder="no" allow="autoplay"
                 style="max-width: 500px;"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/871691284&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-            <br/>
+            <br />
             <div
                 style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
                 <a href="https://soundcloud.com/meltedhugo" title="MeltedHugo" target="_blank"
@@ -44,17 +54,20 @@
                     href="https://soundcloud.com/meltedhugo/wwww-jingle" title="WWWW Tech Support Phone Jingle"
                     target="_blank" style="color: #cccccc; text-decoration: none;">WWWW Tech Support Phone Jingle</a>
             </div>
-            <br/>
+            <br />
 
             <img src="images/callcenter.jpg" alt="callcenter" />
-            <br/>
-            <br/>
+            <br />
+            <br />
 
             <audio controls autoplay loop style="widt">
                 <source src="assets/jingle.mp3" type="audio/mpeg">
             </audio>
-            <br/>
+            <br />
 
+            <footer>
+                <h2>we ARE prfossionals! all right reversed LTD CPA OCD</h2>
+            </footer>
 
             <script type="text/javascript" src="//w.soundcloud.com/player/api.js"></script>
             <script>
@@ -62,12 +75,13 @@
 
                 const init = () => {
                     window.player = SC.Widget('#soundcloud-player');
-                    
-                    if(!isDevelopment()) 
+
+                    if (!isDevelopment())
                         window.player.play();
                 }
             </script>
 
+        
 </body>
 
 </html>
