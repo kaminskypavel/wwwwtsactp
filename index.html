@@ -1,9 +1,12 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@1000&display=swap" rel="stylesheet">
+
     <style>
         * {
-            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            font-family: 'Comic Neue', cursive;
             text-align: center;
         }
 
@@ -11,15 +14,6 @@
             color: blue;
         }
     </style>
-    <script type="text/javascript" src="//w.soundcloud.com/player/api.js"></script>
-    <script>
-        const isDevelopment = () => window.location.href.includes("localhost");
-
-        const init = () => {
-            window.player = SC.Widget('#soundcloud-player');
-            window.player.play();
-        }
-    </script>
 </head>
 
 <body background="images/bg.gif" onload="init()">
@@ -49,7 +43,15 @@
 
             <img src="images/callcenter.jpg" alt="callcenter" />
 
+            <script type="text/javascript" src="//w.soundcloud.com/player/api.js"></script>
+            <script>
+                const isDevelopment = () => window.location.href.includes("localhost");
 
+                const init = () => {
+                    window.player = SC.Widget('#soundcloud-player');
+                    window.player.play();
+                }
+            </script>
 
 </body>
 
